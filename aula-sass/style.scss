@@ -1,0 +1,99 @@
+@use "sass:map";
+
+$image-backgrounds: (
+  "frango":
+    url("https://wp-cdn.typhur.com/wp-content/uploads/2025/01/homemade-pizza-in-air-fryer.jpg"),
+  "bacon":
+    url("https://receitason.com/wp-content/uploads/2023/04/pizza-de-bacon-com-queijo.jpg"),
+  "calabresa":
+    url("https://www.sabornamesa.com.br/media/k2/items/cache/513d7a0ab11e38f7bd117d760146fed3_XL.jpg"),
+);
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sevillana&family=Zen+Maru+Gothic&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+} // reset css
+
+input.button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button {
+  cursor: pointer;
+  background-color: #ffc107;
+}
+
+header {
+  border: solid 2px blue;
+  text-align: center;
+  h1 {
+    color: red;
+  }
+
+  p {
+    color: rgb(245, 47, 255);
+  }
+  .teste {
+    color: rgb(255, 240, 127);
+  }
+  margin-bottom: 0.5rem;
+}
+
+main {
+  text-align: center;
+}
+
+@mixin card-settings(
+  $display: inline-block,
+  $text-align: start,
+  $position: relative,
+  $largura: 300px,
+  $comprimento: 200px,
+  $border: solid 2px green,
+  $padding: 0.1rem,
+  $margin: 0.1rem,
+  $background-image: map.get($image-backgrounds, "frango"),
+  $background-size: cover,
+  $background-repeat: no-repeat,
+  $background-position: center
+) {
+  display: $display;
+  text-align: $text-align;
+  position: $position;
+  width: $largura;
+  border: $border;
+  height: $comprimento;
+  padding: $padding;
+  margin: $margin;
+  background-image: $background-image;
+  background-size: $background-size;
+  background-repeat: $background-repeat;
+  background-position: $background-position;
+}
+
+.card-description {
+  text-align: justify;
+  font-size: 80%;
+}
+
+.card-frango {
+  @include card-settings();
+}
+
+.card-bacon {
+  @include card-settings(
+    $background-image: map.get($image-backgrounds, "bacon")
+  );
+}
+
+.card-calabresa {
+  @include card-settings(
+    $background-image: map.get($image-backgrounds, "calabresa")
+  );
+}

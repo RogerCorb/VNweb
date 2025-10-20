@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sevillana&family=Zen+Maru+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+input.button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  cursor: pointer;
+  background-color: #ffc107;
+}
+
+header {
+  border: solid 2px blue;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+header h1 {
+  color: red;
+}
+header p {
+  color: rgb(245, 47, 255);
+}
+header .teste {
+  color: rgb(255, 240, 127);
+}
+
+main {
+  text-align: center;
+}
+
+.card-description {
+  text-align: justify;
+  font-size: 80%;
+}
+
+.card-frango {
+  display: inline-block;
+  text-align: start;
+  position: relative;
+  width: 300px;
+  border: solid 2px green;
+  height: 200px;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  background-image: url("https://wp-cdn.typhur.com/wp-content/uploads/2025/01/homemade-pizza-in-air-fryer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-bacon {
+  display: inline-block;
+  text-align: start;
+  position: relative;
+  width: 300px;
+  border: solid 2px green;
+  height: 200px;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  background-image: url("https://receitason.com/wp-content/uploads/2023/04/pizza-de-bacon-com-queijo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-calabresa {
+  display: inline-block;
+  text-align: start;
+  position: relative;
+  width: 300px;
+  border: solid 2px green;
+  height: 200px;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  background-image: url("https://www.sabornamesa.com.br/media/k2/items/cache/513d7a0ab11e38f7bd117d760146fed3_XL.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */
