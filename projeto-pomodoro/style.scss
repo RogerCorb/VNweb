@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chau Philomene One", sans-serif;
+}
+
+header {
+  background-image: url("./img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 1.5rem 2rem;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  .menu-icon {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25vw;
+  .btn {
+    background-color: #b72222;
+    color: #d7cbcb;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+.box-banner {
+  height: 83vh;
+  color: #d7cbcb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  h1 {
+    font-size: 7rem;
+  }
+  p {
+    color: #fd1e1e;
+    font-size: 2.5rem;
+  }
+}
+
+.box-description {
+  background: #d7cbcb;
+  width: 100%;
+  height: 205px;
+  left: 0px;
+  top: 810px;
+  .paragrafo-description {
+    width: 100%;
+    height: 147px;
+    p {
+      font-family: "Chau Philomene One";
+      letter-spacing: 0%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 49px;
+      color: #000000;
+    }
+  }
+}
+
+.box-images {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+
+  width: 100%;
+  height: 1284px;
+  top: 1015px;
+  background-color: #000000;
+  .select-time {
+    width: 421px;
+    height: 562px;
+
+    background-color: #b72222;
+
+    opacity: 1;
+    top: 1044px;
+    left: 34px;
+    border-radius: 8px;
+  }
+
+  .select-pause {
+    width: 421px;
+    height: 562px;
+
+    background-color: #b72222;
+
+    opacity: 1;
+    top: 1044px;
+    left: 34px;
+    border-radius: 8px;
+  }
+
+  .select-other-pom {
+    width: 421px;
+    height: 562px;
+
+    background-color: #b72222;
+
+    opacity: 1;
+    top: 1044px;
+    left: 34px;
+    border-radius: 8px;
+  }
+
+  .select-four {
+    width: 421px;
+    height: 562px;
+
+    background-color: #b72222;
+
+    opacity: 1;
+    top: 1044px;
+    left: 34px;
+    border-radius: 8px;
+  }
+
+  .select-initial-cicle {
+    width: 421px;
+    height: 562px;
+
+    background-color: #b72222;
+
+    opacity: 1;
+    top: 1044px;
+    left: 34px;
+    border-radius: 8px;
+  }
+}
