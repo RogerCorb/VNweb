@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+O display flex é uma propriedade do CSS introduzida no CSS3 que revolucionou a forma como lidamos com layouts e posicionamento de elementos em páginas web.
+
+Com o flexbox, podemos alinhar, distribuir e redimensionar elementos internos de maneira muito mais simples, evitando gambiarras e facilitando o design responsivo.
+*/
+
+.container {
+    border: 2px solid #000;
+    height: 80vh;
+    display: flex;  //Ativa o flexbox
+    justify-content: center; // itens centralizados
+    /*
+    justify-content controla o alinhamento dos itens no eixo principal (main axis)
+  - flex-start (padrão): itens alinhados no início
+  - flex-end: itens alinhados no final
+  - center: itens centralizados
+  - space-between: espaço apenas entre os itens
+  - space-around: espaço ao redor dos itens
+  - space-evenly: espaçamento igual entre e nas bordas dos itens
+    */
+
+    .item {
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        margin: 10px; //No elemento de class container2 não será usado mais margin e sim gap, no elemento pai e não nos filhos/itens.
+    }
+}
+
+.container1 {
+    border: 2px solid #000;
+    height: 80vh;
+    display: flex; //Ativa o flexbox
+    justify-content: center; // itens centralizados no eixo principal
+    align-items: center; // itens centralizados no eixo cruzado/transversal
+    /*
+    align-items controla o alinhamento dos itens no eixo cruzado (cross axis)
+    - stretch (padrão): estica os itens para preencher o container
+    - flex-start: alinha ao topo
+    - flex-end: alinha ao fundo
+    - center: centraliza verticalmente
+    - baseline: alinha pela linha de base do texto
+    */
+
+    .item1 {
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        margin: 10px; //No elemento de class container2 não será usado mais margin e sim gap, no elemento pai e não nos filhos/itens.
+    }
+}
+
+.container2 {
+    border: 2px solid #000;
+    height: 80vh;
+    display: flex; //Ativa o flexbox
+    flex-wrap: wrap; //permite quebrar linha quando os itens ultrapassam o limite
+    align-content: flex-start; //controla o alinhamento de múltiplas linhas (quando usamos wrap)
+    //gap: 10px; -> aplica-se tanto para linha(row) e coluna(column)
+    row-gap: 10px;
+    column-gap: 10px;
+
+    /*
+    - nowrap (padrão): todos os itens em uma linha
+    - wrap: quebra para a linha seguinte se não couber
+    - wrap-reverse: quebra invertendo a ordem das linhas
+    */
+
+    .item2 {
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        //margin-right: 10px;
+    }
+}
+
+.container3 {
+    border: 2px solid #000;
+    height: 80vh;
+    display: flex; //Ativa o flexbox
+    flex-direction: column-reverse; //De baixo para cima
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    //gap: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    /*
+    A prpriedade flex-direction controla a direção do fluxo dos itens
+    - row (padrão): itens em linha, da esquerda para direita
+    - row-reverse: da direita para esquerda
+    - column: itens em coluna, de cima para baixo
+    - column-reverse: de baixo para cima
+    */
+
+    .item3 {
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        //margin-right: 10px;
+    }
+    .item4 {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+    }
+    .item5 {
+        width: 100px;
+        height: 100px;
+        background-color: #ff0000;
+    }
+}

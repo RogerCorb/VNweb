@@ -1,0 +1,112 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+O display flex é uma propriedade do CSS introduzida no CSS3 que revolucionou a forma como lidamos com layouts e posicionamento de elementos em páginas web.
+
+Com o flexbox, podemos alinhar, distribuir e redimensionar elementos internos de maneira muito mais simples, evitando gambiarras e facilitando o design responsivo.
+*/
+.container {
+  border: 2px solid #000;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  /*
+    justify-content controla o alinhamento dos itens no eixo principal (main axis)
+  - flex-start (padrão): itens alinhados no início
+  - flex-end: itens alinhados no final
+  - center: itens centralizados
+  - space-between: espaço apenas entre os itens
+  - space-around: espaço ao redor dos itens
+  - space-evenly: espaçamento igual entre e nas bordas dos itens
+    */
+}
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  margin: 10px;
+}
+
+.container1 {
+  border: 2px solid #000;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*
+  align-items controla o alinhamento dos itens no eixo cruzado (cross axis)
+  - stretch (padrão): estica os itens para preencher o container
+  - flex-start: alinha ao topo
+  - flex-end: alinha ao fundo
+  - center: centraliza verticalmente
+  - baseline: alinha pela linha de base do texto
+  */
+}
+.container1 .item1 {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  margin: 10px;
+}
+
+.container2 {
+  border: 2px solid #000;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  /*
+  - nowrap (padrão): todos os itens em uma linha
+  - wrap: quebra para a linha seguinte se não couber
+  - wrap-reverse: quebra invertendo a ordem das linhas
+  */
+}
+.container2 .item2 {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+
+.container3 {
+  border: 2px solid #000;
+  height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  /*
+  A prpriedade flex-direction controla a direção do fluxo dos itens
+  - row (padrão): itens em linha, da esquerda para direita
+  - row-reverse: da direita para esquerda
+  - column: itens em coluna, de cima para baixo
+  - column-reverse: de baixo para cima
+  */
+}
+.container3 .item3 {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+.container3 .item4 {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+}
+.container3 .item5 {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+}/*# sourceMappingURL=style.css.map */
